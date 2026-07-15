@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Notice | RJBITSOL</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #333;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+            max-width: 500px;
+            width: 100%;
+            padding: 40px 30px;
+            text-align: center;
+            border-top: 6px solid #e53e3e; /* Friendly warning red */
+        }
+
+        .icon-wrapper {
+            background-color: #fff5f5;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 24px auto;
+        }
+
+        .icon {
+            color: #e53e3e;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 12px;
+        }
+
+        p {
+            font-size: 15px;
+            color: #718096;
+            line-height: 1.6;
+            margin-bottom: 24px;
+        }
+
+        .details-box {
+            background-color: #f7fafc;
+            border: 1px solid #edf2f7;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 24px;
+            text-align: left;
+        }
+
+        .details-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        .details-row:last-child {
+            margin-bottom: 0;
+        }
+
+        .label {
+            color: #718096;
+            font-weight: 500;
+        }
+
+        .value {
+            color: #2d3748;
+            font-weight: 600;
+        }
+
+        .btn-call {
+            display: block;
+            background-color: #3182ce;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 14px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 16px;
+            transition: background-color 0.2s ease;
+            box-shadow: 0 4px 12px rgba(49, 130, 206, 0.2);
+        }
+
+        .btn-call:hover {
+            background-color: #2b6cb0;
+        }
+
+        .footer {
+            margin-top: 24px;
+            font-size: 12px;
+            color: #a0aec0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Warning Icon -->
+        <div class="icon-wrapper">
+            <span class="icon">⚠️</span>
+        </div>
+
+        <!-- Warning Message -->
+        <h1>Account Suspended</h1>
+        <p>Your internet access has been temporarily paused due to an outstanding balance. Please settle your payment to restore your service instantly.</p>
+
+        <!-- Information Box -->
+        <div class="details-box">
+            <div class="details-row">
+                <span class="label">Service Provider:</span>
+                <span class="value">RJBITSOL</span>
+            </div>
+            <div class="details-row">
+                <span class="label">Status:</span>
+                <span class="value" style="color: #e53e3e;">Overdue</span>
+            </div>
+            <div class="details-row">
+                <span class="label">Restoration Time:</span>
+                <span class="value">Within 5-10 Mins (Auto)</span>
+            </div>
+        </div>
+
+        <!-- Call to Action -->
+        <a href="tel:+639000000000" class="btn-call">📞 Contact Billing Support</a>
+
+        <!-- Footer Notice -->
+        <div class="footer">
+            If you have already paid, please allow up to 15 minutes for system synchronization.
+        </div>
+    </div>
+
+</body>
+</html>
